@@ -1,6 +1,22 @@
 	@media(max-width:4000px){
 
 	}
+
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+	::-webkit-scrollbar-track {
+		background: #4d4d4d;
+	}
+	::-webkit-scrollbar-thumb {
+		background: #F2B263;
+		border-radius: 12px;
+		transition: all 0.4s ease;
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background: #ED9121;
+	}
+	
 	main.screen{
 		max-width: 2200px;
 		padding: 40px;

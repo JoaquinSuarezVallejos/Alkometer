@@ -1,11 +1,6 @@
 /*
 	JS: Global CSS BLOCKS JS
-	Developed By:	LayoutFlow
-	URL:			https://layoutflow.com
-	Version:		1.0
-	License: 		https://creativecommons.org/licenses/by-nc-sa/4.0/	
 */	
-
 
 	// JAVASCRIPT
 
@@ -18,7 +13,7 @@
 		// HEADER FIXED
 		function headerfixed(){
 			let getheaderdiv = document.getElementsByTagName('header')[0].classList;
-			if(document.documentElement.scrollTop > 100){
+			if(document.documentElement.scrollTop > 20){
 				getheaderdiv.add('fixed');
 			}else{
 				getheaderdiv.remove('fixed');
