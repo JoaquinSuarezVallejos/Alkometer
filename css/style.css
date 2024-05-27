@@ -3,20 +3,20 @@
 	}
 
 	::-webkit-scrollbar {
-		width: 10px;
+		width: 12px;
 	}
 	::-webkit-scrollbar-track {
-		background: #4d4d4d;
+		background: #D3D3D3;
 	}
 	::-webkit-scrollbar-thumb {
-		background: #F2B263;
-		border-radius: 12px;
+		background: #f4bd7a;
+		border-radius: 0px;
 		transition: all 0.4s ease;
 	}
 	::-webkit-scrollbar-thumb:hover {
-		background: #ED9121;
+		background: #f2b264;
 	}
-	
+
 	main.screen{
 		max-width: 2200px;
 		padding: 40px;
@@ -69,8 +69,23 @@
 		color: #000;
 	}
 	.banner{
-		background: url(../images/bg.jpg) no-repeat center !important;
+		background: url(../images/5.jpg) no-repeat center !important;
 		background-size: cover !important;
+	}
+	.text-overlay{
+		background: rgba(0,0,0,0.6); /* Black background with 50% opacity */
+	}
+	.center_div{
+		margin: 0 auto;
+	}
+	.move-up {
+		transform: translateY(-100px); /* Move the div up by 20px */
+	}	  
+	.underline-text{
+		text-decoration: underline;
+		text-decoration-color: white;
+		text-decoration-thickness: 3px;
+		text-underline-offset: 5px;
 	}
 	.services h2:after{
 		background: #000!important;

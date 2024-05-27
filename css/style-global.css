@@ -34,7 +34,7 @@
 	/* HIDE */
 	.hide{display: none;}
 	.hide_in_pc{display: none;}
-	.hide_in_mobile{}
+	.hide_in_mobile{display: none}
 
 
 
@@ -471,6 +471,10 @@
 	.mb_150			{margin-bottom: 150px;}
 	.mb_175 		{margin-bottom: 175px;}
 	.mb_200			{margin-bottom: 200px;}
+	.mb_225			{margin-bottom: 225px;}
+	.mb_250			{margin-bottom: 250px;}
+	.mb_275			{margin-bottom: 275px;}
+	.mb_300			{margin-bottom: 300px;}
 
 
 	.mt_5			{margin-top: 5px;}
