@@ -1,6 +1,5 @@
-/*
-	CSS: 			Global CSS
-*/
+/* Global CSS */
+
 	*{
 		box-sizing: border-box; -webkit-box-sizing: border-box;
 		margin: 0;padding: 0;
@@ -18,7 +17,6 @@
 		font-size:250%;
 	}
 
-
 	.text_left{text-align: left;}
 	.text_right{text-align: right;}
 	.text_center{text-align: center;}
@@ -30,12 +28,10 @@
 	.tt_c{text-transform: capitalize;}
 
 	
-
 	/* HIDE */
 	.hide{display: none;}
 	.hide_in_pc{display: none;}
 	.hide_in_mobile{display: none}
-
 
 
 	/* FLOAT */
@@ -47,7 +43,6 @@
 	.f_r_w_a {float: right;width: auto;}
 
 
-
 	/* WIDTH HEIGHT */
 	.w_full{width:100%;}
 	.w_auto{width:auto;}
@@ -57,7 +52,6 @@
 	.h_auto{height: auto;}
 	.w_0{width: 0;}
 	.h_0{height: 0;}
-
 
 	.w_100{width: 100%;} 
 	.w_95{width: 95%;}
@@ -89,7 +83,6 @@
 	.mb_auto 		{margin-bottom:auto;}
 
 
-
 	/* FONT FAMILY */
 	h1, h2, h3, h4, h5, h6, div, li, p, a, blockquote, input, textarea, button, select, td, th{font-family: 'Manrope';}
 	/* LINK THESE FONTS BEFORE USE */
@@ -107,7 +100,6 @@
 	.font_cabin{font-family: 'Cabin', sans-serif;}
 	.font_fjalla{font-family: 'Fjalla One', sans-serif;}
 	.font_bebas_neue{font-family: 'Bebas Neue', cursive;}
-
 
 
 	/* FONT SIZE */
@@ -163,7 +155,6 @@
 	.fs_5	{font-size:5px;}
 
 
-	
 	.fs_rem_20		{font-size:20rem;}
 	.fs_rem_19_5	{font-size:19.5rem;}
 	.fs_rem_19 		{font-size:19rem;}
@@ -219,7 +210,6 @@
 	.f_oblique{font-style: oblique;}
 
 
-
 	/* LINE HEIGHT */
 	.lh_normal 	{line-height: normal;}
 	.lh_100 	{line-height: 100%;}
@@ -235,11 +225,6 @@
 	.lh_200 	{line-height: 200%;}
 
 
-
-
-
-
-
 	/* LETTER SPACING */
 	.ls_1{letter-spacing: 1px}
 	.ls_2{letter-spacing: 2px}
@@ -251,9 +236,6 @@
 	.ls_8{letter-spacing: 8px}
 	.ls_9{letter-spacing: 9px}
 	.ls_10{letter-spacing: 10px}
-
-
-
 
 
 	/* POSITIONS */
@@ -289,12 +271,10 @@
 	.zindex_9999{z-index: 9999;}
 
 
-
 	/* DISPLAY */
 	.dnone{display: none;}
 	.dtable{display: table;}
 	.dblock{display: block;}
-
 
 
 	/* FLEXBOX */
@@ -318,7 +298,6 @@
 	.jc_fe{justify-content: flex-end;}
 
 
-
 	/* IMAGES */
 	.img_fl{float: left;}
 	.img_fr{float: right;}
@@ -329,8 +308,6 @@
 	.img_basic{float: left;width: 100%;height: auto;}
 	.img_basic_2{float: left;height: auto;}
 	.img_fit{object-fit: cover;object-position: center;}
-
-
 
 
 	/* ASPECT RATIOS */
@@ -392,8 +369,6 @@
 	.aspectratio_16_20	{aspect-ratio: 16/20;}
 
 
-
-
 	/* TRANSITIONS */
 	.ts_0_1	{transition:0.1s;-webkit-transition:0.1s;} .ts_0	{transition:0s;-webkit-transition:0s;}
 	.ts_0_2	{transition:0.2s;-webkit-transition:0.2s;}
@@ -424,8 +399,6 @@
 	.ts_5_5	{transition:5.5s;-webkit-transition:5.5s;}
 
 
-
-
 	/* BORDER RADIUS */
 	.radius_full{border-radius:50%;-webkit-border-radius:50%;}
 	.radius_1{border-radius:1px;-webkit-border-radius:1px;}
@@ -446,9 +419,6 @@
 	.radius_50{border-radius:50px;-webkit-border-radius:50px;}
 	.radius_60{border-radius:60px;-webkit-border-radius:60px;}
 	.radius_70{border-radius:70px;-webkit-border-radius:70px;}
-
-
-
 
 
 	/* MARGIN VALUES */
@@ -540,8 +510,6 @@
 	.mr_200			{margin-right: 200px;}
 	
 
-
-
 	/* PADDING VALUES */
 	.pb_0			{padding-bottom: 0px;}
 	.pb_5			{padding-bottom: 5px;}
@@ -627,10 +595,6 @@
 	.pr_175			{padding-right: 175px;}
 	.pr_200			{padding-right: 200px;}
 	
-
-
-	
-
 
 	/* COLORS */
 	.text_aliceblue			{color: aliceblue;}
@@ -781,7 +745,6 @@
 
 	/* BREAK */
 
-
 	.bg_none{background: none;}
 	.bg_transparent{background: transparent;}
 	.bg_aliceblue			{background-color: aliceblue;}
@@ -931,10 +894,6 @@
 	.bg_yellowgreen{background-color: yellowgreen;}
 	
 
-
-
-
-
 	.border_none{border: none !important;}
 	.border_transparent{border: transparent!important;}
 	.border_aliceblue			{border-color: aliceblue;}
@@ -1082,9 +1041,6 @@
 	.border_whitesmoke{border-color: whitesmoke;}
 	.border_yellow{border-color: yellow;}
 	.border_yellowgreen{border-color: yellowgreen;}
-
-
-
 
 
 	/* VW UNITS */
@@ -1246,6 +1202,8 @@
 	.pr_vw_13{padding-right: 13vw;}
 	.pr_vw_14{padding-right: 14vw;}
 	.pr_vw_15{padding-right: 15vw;}
+
+
 	/* MARGIN VALUES */
 	.mt_vw_0_5{margin-top: 0.5vw;}
 	.mt_vw_0_6{margin-top: 0.6vw;}
@@ -1366,15 +1324,12 @@
 /* 4K + DEFAULT CSS ENDS */
 
 
-
-
 /* FOR QHD+ and -UHD */
 @media(max-width:3300px){
 	html{
 		font-size:120%;
 	}
 }
-
 
 
 /* FOR QHD AND FHD */
@@ -1583,7 +1538,6 @@
 	.pr_200_fhd			{padding-right: 200px !important;}
 
 
-
 	/* LETTER SPACING FHD */
 	.ls_1_fhd{letter-spacing: 1px}
 	.ls_2_fhd{letter-spacing: 2px}
@@ -1596,12 +1550,8 @@
 	.ls_9_fhd{letter-spacing: 9px}
 	.ls_10_fhd{letter-spacing: 10px}
 
-
-
 	.bg_none_fhd{background: none !important;}
 	.bg_transparent_fhd{background: transparent !important;}
-
-
 
 	.lh_normal_fhd 	{line-height: normal !important;}
 	.lh_100_fhd 	{line-height: 100% !important;}
@@ -1616,10 +1566,6 @@
 	.lh_190_fhd 	{line-height: 190% !important;}
 	.lh_200_fhd 	{line-height: 200% !important;}
 }
-
-
-
-
 
 
 /* FOR HD SCREENS AND LAPTOPS */
@@ -1670,7 +1616,6 @@
 	.fs_7_hd	{font-size:7px !important;}
 	.fs_6_hd	{font-size:6px !important;}
 	.fs_5_hd	{font-size:5px !important;}
-
 
 
 	.mb_5_hd			{margin-bottom: 5px !important;}
@@ -1828,7 +1773,6 @@
 	.pr_200_hd			{padding-right: 200px !important;}
 
 
-
 	/* LETTER SPACING HD */
 	.ls_1_hd{letter-spacing: 1px}
 	.ls_2_hd{letter-spacing: 2px}
@@ -1841,12 +1785,8 @@
 	.ls_9_hd{letter-spacing: 9px}
 	.ls_10_hd{letter-spacing: 10px}
 
-
 	.bg_none_hd{background: none !important;}
 	.bg_transparent_hd{background: transparent !important;}
-
-
-
 
 	.lh_normal_hd 	{line-height: normal !important;}
 	.lh_100_hd 	{line-height: 100% !important;}
@@ -1861,10 +1801,6 @@
 	.lh_190_hd 	{line-height: 190% !important;}
 	.lh_200_hd 	{line-height: 200% !important;}
 }
-
-
-
-
 
 
 
@@ -2081,7 +2017,6 @@
 	.pr_200_tablet			{padding-right: 200px !important;}
 
 
-
 	.flex_wrap_tablet{flex-wrap: wrap !important;}
 	.flex_wrap_no_tablet{flex-wrap: nowrap !important;}
 	.flex_wrap_r_tablet{flex-wrap: wrap-reverse !important;}
@@ -2099,7 +2034,6 @@
 	.jc_se_tablet{justify-content: space-evenly !important;}
 	.jc_fs_tablet{justify-content: flex-start !important;}
 	.jc_fe_tablet{justify-content: flex-end !important;}
-
 
 
 	.w_100_tablet{width: 100% !important;} 
@@ -2123,14 +2057,10 @@
 	.w_10_tablet{width: 10% !important;}
 	.w_5_tablet{width: 5% !important;}
 
-
-
 	.smallborder.after:after, .smallborder.before:before, .smallborder.vwuit:after{
 		width: 80px;
 		height: 3px;
 	}
-
-
 
 	/* LETTER SPACING TABLET */
 	.ls_1_tablet{letter-spacing: 1px}
@@ -2144,13 +2074,8 @@
 	.ls_9_tablet{letter-spacing: 9px}
 	.ls_10_tablet{letter-spacing: 10px}
 
-
-
 	.bg_none_tablet{background: none !important;}
 	.bg_transparent_tablet{background: transparent !important;}
-
-
-
 
 	.lh_normal_tablet 	{line-height: normal !important;}
 	.lh_100_tablet 	{line-height: 100% !important;}
