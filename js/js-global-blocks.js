@@ -38,4 +38,13 @@ $(document).ready(function () {
       $("a.hidemenu").hide();
     }
   });
+
+  $('#contact-form').on('submit', (e) => {
+    e.preventDefault();
+    let name = $('[name="name"]').val();
+    let message = $('[name="message"]').val();
+    let finalMessage = `¡Hola! Soy ${name}. ${message}`;
+    let url = `https://wa.me/5491126438752?text=${finalMessage}`;
+    window.open(url, '_blank');
+  });
 });
