@@ -39,6 +39,8 @@ a.logo img.primary {
 }
 a.logo img.secondary {
   display: none;
+  width: 320px; /* 581 - 45% = 319.55 */
+  height: 63px; /* 114 - 45% = 62.7 */
 }
 header.fixed a.logo img.primary {
   display: none;
