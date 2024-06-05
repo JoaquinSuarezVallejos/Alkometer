@@ -12,7 +12,6 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #f2b264;
 }
-
 main.screen {
   max-width: 2200px;
   padding: 40px;
@@ -33,9 +32,9 @@ header.fixed {
 header.fixed .container {
   padding: 0 40px;
 }
-a.logo {
-}
 a.logo img.primary {
+  width: 320px;
+  height: 63px;
 }
 a.logo img.secondary {
   display: none;
@@ -79,6 +78,7 @@ header.fixed .navigation nav ul li a:hover {
 .banner {
   background: url(../images/background.jpg) no-repeat center !important;
   background-size: cover !important;
+  border-radius: 20px;
 }
 .text-overlay {
   background: rgba(0, 0, 0, 0.6); /* Black background with 50% opacity */
@@ -98,23 +98,27 @@ header.fixed .navigation nav ul li a:hover {
 .services h2:after {
   background: #000 !important;
 }
-.service_items {
-}
 .service_items .item {
   flex-basis: 30%;
 }
 .about h2:after {
   background: #000 !important;
 }
+.about .container{
+  display: grid;
+  grid-template-rows: auto auto; /* Two rows: one for the image and one for the text */
+  justify-items: center; /* Center items horizontally */
+
+}
+.controlAlcoholemia1{
+  border-radius: 25px;
+} 
 .contact h2:after {
   background: #000 !important;
 }
-
 .copyright a {
   color: #000;
   border-bottom: 1px solid #000;
-}
-.social {
 }
 .social a {
   float: left;
@@ -124,8 +128,6 @@ header.fixed .navigation nav ul li a:hover {
 }
 .social a:last-of-type {
   margin-right: 0;
-}
-.footerlinks {
 }
 .footerlinks a {
   float: left;
