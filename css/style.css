@@ -104,16 +104,9 @@ header.fixed .navigation nav ul li a:hover {
 .about h2:after {
   background: #000 !important;
 }
-.about .container{
-  display: grid;
-  grid-template-rows: auto auto; /* Two rows: one for the image and one for the text */
-  justify-items: center; /* Center items horizontally */
-
-}
 .click_aqui{  
   text-decoration: underline;
 }
-
 .contact h2:after {
   background: #000 !important;
 }
