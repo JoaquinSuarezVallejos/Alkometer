@@ -110,9 +110,10 @@ header.fixed .navigation nav ul li a:hover {
   justify-items: center; /* Center items horizontally */
 
 }
-.controlAlcoholemia1{
-  border-radius: 25px;
-} 
+.click_aqui{  
+  text-decoration: underline;
+}
+
 .contact h2:after {
   background: #000 !important;
 }
