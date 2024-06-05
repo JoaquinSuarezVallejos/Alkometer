@@ -52,6 +52,14 @@
 }
 
 @media (max-width: 640px) {
+  a.logo img.primary{
+    width: 232px; /* 581 - 60% = 232.4 */
+    height: 45px; /* 114 - 60% = 45.6 */
+  }
+  a.logo img.secondary{
+    width: 232px; /* 581 - 60% = 232.4 */
+    height: 45px; /* 114 - 60% = 45.6 */
+  }
   .service_items .item {
     flex-basis: 100%;
     margin-bottom: 40px;
@@ -75,4 +83,8 @@
   .footerlinks a {
     font-size: 17px;
   }
+}
+
+@media (max-width: 390px) { /* TO-DO: Make hamburger button disappear and center "Alkometer" logo */
+
 }

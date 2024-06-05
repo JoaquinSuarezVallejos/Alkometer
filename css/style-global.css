@@ -2092,16 +2092,12 @@
 }
 
 
-
-
-
-
 /* FOR SMARTPHONES */
 @media(max-width:640px){
+	
 	html{
 		font-size: 45%;
 	}
-
 
 	.fs_100_mobile	{font-size:100px !important;}
 	.fs_90_mobile	{font-size:90px !important;}

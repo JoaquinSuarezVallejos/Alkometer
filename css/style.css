@@ -33,8 +33,8 @@ header.fixed .container {
   padding: 0 40px;
 }
 a.logo img.primary {
-  width: 320px;
-  height: 63px;
+  width: 320px; /* 581 - 45% = 319.55 */
+  height: 63px; /* 114 - 45% = 62.7 */
 }
 a.logo img.secondary {
   display: none;
