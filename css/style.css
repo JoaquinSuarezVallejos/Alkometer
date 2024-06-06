@@ -101,7 +101,7 @@ header.fixed .navigation nav ul li a:hover {
 .service_items .item {
   flex-basis: 30%;
 }
-.about h2:after {
+.title_line_color h2:after {
   background: #000 !important;
 }
 .click_aqui{  
