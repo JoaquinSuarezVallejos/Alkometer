@@ -84,7 +84,9 @@ header.fixed .navigation nav ul li a:hover {
   border-radius: 20px;
 }
 .text-overlay {
-  background: rgba(0, 0, 0, 0.6); /* Black background with 50% opacity */
+  background: rgba(0, 0, 0, 0.6); /* Black background with 60% opacity */
+  border-radius: 20px;
+  padding: 10px;
 }
 .center_div {
   margin: 0 auto;

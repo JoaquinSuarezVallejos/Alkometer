@@ -173,7 +173,7 @@ section {
   height: 0.3vw;
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1200px) {
   .headermenu {
   }
   .headermenu a.menucontrol {
