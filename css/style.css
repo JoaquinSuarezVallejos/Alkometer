@@ -33,13 +33,13 @@ header.fixed .container {
   padding: 0 40px;
 }
 a.logo img.primary {
-  width: 320px; /* 581 - 45% = 319.55 */
-  height: 63px; /* 114 - 45% = 62.7 */
+  width: 232px; /* 581 - 60% = 232 */
+  height: 45px; /* 114 - 60% = 45.6 */
 }
 a.logo img.secondary {
   display: none;
-  width: 320px; /* 581 - 45% = 319.55 */
-  height: 63px; /* 114 - 45% = 62.7 */
+  width: 232px; /* 581 - 60% = 232 */
+  height: 45px; /* 114 - 60% = 45.6 */
 }
 header.fixed a.logo img.primary {
   display: none;
@@ -49,10 +49,10 @@ header.fixed a.logo img.secondary {
 }
 .navigation nav ul li {
   color: #fff;
-  font-size: 19px;
-  margin-right: 30px;
+  font-size: 16px;
+  margin-right: 25px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: 5px;
 }
 .navigation nav ul li:last-of-type {
@@ -60,7 +60,10 @@ header.fixed a.logo img.secondary {
 }
 .navigation nav ul li a {
   color: #fff;
-  padding: 10px 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 13px;
+  padding-right: 8px;
   border: 1px solid rgba(255, 255, 255, 0);
 }
 .navigation nav ul li.active a,
