@@ -32,7 +32,9 @@ header {
   z-index: 5;
 
   --padding-horizontal: calc(var(--main-padding) * 2.5);
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1) all .25s;
+  /* transition: cubic-bezier(0.075, 0.82, 0.165, 1) all .25s; */
+  /* transition: cubic-bezier(0.15, 0.82, 0.165, 1) all 0.5s; */
+  transition: ease-in-out all 0.35s;
   padding: calc(var(--main-padding) * 1.8) var(--padding-horizontal) 25px var(--padding-horizontal);
 
   display: flex;
@@ -213,6 +215,14 @@ header {
   background: url(../images/background.jpg) no-repeat center !important;
   background-size: cover !important;
   border-radius: 20px;
+}
+.page_divider{
+  width: 40%;
+  height: 40%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
 }
 .text-overlay {
   background: rgba(0, 0, 0, 0.6); /* Black background with 60% opacity */
