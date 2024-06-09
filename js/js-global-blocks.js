@@ -19,26 +19,6 @@ window.onscroll = headerfixed;
 
 // JQUERY
 $(document).ready(function () {
-  // NAV MENU MANAGEMENT
-  $("a.showmenu").click(function () {
-    $(".navigation").fadeIn();
-    $(this).hide();
-    $("a.hidemenu").fadeIn("slow");
-  });
-  $("a.hidemenu").click(function () {
-    $(".navigation").fadeOut();
-    $(this).hide();
-    $("a.showmenu").fadeIn("slow");
-  });
-  $(".navigation ul li").click(function () {
-    let getscreenwidth = $(window).width();
-    if (getscreenwidth < 1201) {
-      $(".navigation").fadeOut();
-      $("a.showmenu").fadeIn("slow");
-      $("a.hidemenu").hide();
-    }
-  });
-
   $('#contact-form').on('submit', (e) => {
     e.preventDefault();
     let name = $('[name="name"]').val();

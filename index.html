@@ -28,35 +28,29 @@
 	</head>
 
 	<!-- Body -->
-	<body id="home">
+	<body>
+		<header>
+			<div id="header-content">
+				<a id="header-logo" href=".">
+					<div id="isotype"></div>
+					<div id="logo"></div>
+				</a>
+				<a href="javascript:void(0)" id="header-menu-toggle"><i class="fa-solid"></i></a>
+				<nav id="headnav">
+					<ul>
+						<li class="active"><a href="#home">Inicio</a></li>
+						<li><a href="#que_es_alcoholemia">Acerca de</a></li>
+						<li><a href="#alcoholimetro">Alcoholímetro</a></li>
+						<li><a href="#contact">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
 		<main class="screen w_100 ml_auto mr_auto">
 
-			<!-- Header -->
-			<header class="p_fixed w_100 left top zindex_5 ts_0_5">
-				<div class="container w_100 dflex flex_wrap jc_sb ai_c ts_0_5">
-					<a class="logo">
-						<img src="images/logo1.png" alt="" class="primary"/>
-						<img src="images/logo2.png" alt="" class="secondary"/>
-					</a>
-					<div class="headermenu">
-						<a href="javascript:void()" class="showmenu menucontrol"><i class="fa-solid fa-bars"></i></a>
-						<a href="javascript:void()" class="hidemenu menucontrol"><i class="fa-times"></i></a>
-						<div class="navigation">
-							<nav id="headnav">
-								<ul>
-									<li class="active"><a href="#home">Inicio</a></li>
-									<li><a href="#que_es_alcoholemia">Acerca de</a></li>
-									<li><a href="#alcoholimetro">Alcoholímetro</a></li>
-									<li><a href="#contact">Contacto</a></li>
-								</ul>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</header>
-
 			<!-- Banner -->
-			<section class="banner f_l_w_100 pt_200 pb_200 aspectratio_16_10 dflex flex_wrap jc_c ai_c pt_150_tablet pb_125_tablet">
+			<section class="banner f_l_w_100 pt_200 pb_200 aspectratio_16_10 dflex flex_wrap jc_c ai_c pt_150_tablet pb_125_tablet" id="home">
 				<div class="container pl_60 pr_60">
 					<div class="text">
 						<h1 class="w_auto text-overlay fs_45 f_900 text_white text_center mb_40 ml_25 mr_25 fs_30_tablet fs_25_mobile">El único alcoholímetro que no juzga y no multa... tampoco quiere tu auto, sólo tu bienestar.</h1>
@@ -188,12 +182,6 @@
 
 		<!-- JS -->
 		<script src="js/js-global-blocks.js"></script>
-		<script>
-			var menuid = '#headnav';
-			var gaptop = 135;
-			var scrollspeed = 1200;
-			var menu_active_class = 'active';
-		</script>	
 		<script src="js/navjs.js"></script>
 	</body>
 </html>

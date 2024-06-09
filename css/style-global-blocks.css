@@ -8,40 +8,6 @@
   width: 100%;
 }
 
-/* HEADER */
-header {
-}
-a.logo {
-  float: left;
-}
-a.logo img {
-  float: left;
-  width: 220px;
-  height: auto;
-}
-
-/* HEADER MENU */
-.headermenu {
-}
-.headermenu a.menucontrol {
-  display: none;
-}
-.navigation {
-}
-.navigation nav {
-}
-.navigation nav ul {
-}
-.navigation nav ul li {
-  float: left;
-}
-.navigation nav ul li:last-of-type {
-}
-.navigation nav ul li a {
-  transition: 0.4s;
-  -webkit-transition: 0.4s;
-}
-
 .btnbox {
 }
 .btnbox {
