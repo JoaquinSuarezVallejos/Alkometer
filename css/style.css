@@ -57,7 +57,7 @@ header {
       justify-content: center;
       align-items: center;
       align-self: stretch;
-      gap: 8px;
+      gap: 0px;
       flex-grow: 1;
       flex-shrink: 1;
       overflow: hidden;
@@ -74,7 +74,7 @@ header {
       }
 
       #logo {
-        mask-image: url(../images/old_logo1.png);
+        mask-image: url(../images/noIcon_logo1.png);
         mask-size: contain;
         mask-repeat: no-repeat;
         background-color: white;
@@ -90,7 +90,7 @@ header {
       color: white;
       font-size: 24px;
 
-      @media (max-width: 1000px) {
+      @media (max-width: 1150px) {
         display: block;
         z-index: 1000;
       }
@@ -109,7 +109,7 @@ header {
       flex-shrink: 0;
       transition: opacity 0.25s ease-in-out;
 
-      @media (max-width: 1000px) {
+      @media (max-width: 1150px) {
         position: absolute;
         width: 100vw;
         height: 100vh;
@@ -135,7 +135,7 @@ header {
         display: flex;
         gap: 12px;
 
-        @media (max-width: 1000px) {
+        @media (max-width: 1150px) {
           flex-direction: column;
           align-items: center;
           gap: 32px;
@@ -170,7 +170,7 @@ header {
     #header-content {
       #header-logo {
         #logo {
-          background-color: black;
+          background-color: #000;
         }
       }
 
@@ -186,7 +186,7 @@ header {
         a {
           color: black;
 
-          @media (max-width: 1000px) {
+          @media (max-width: 1150px) {
             color: white;
           }
         }
@@ -195,7 +195,7 @@ header {
         a:hover {
           border-color: black;
 
-          @media (max-width: 1000px) {
+          @media (max-width: 1150px) {
             border-color: white;
           }
         }
