@@ -140,7 +140,9 @@ section {
 }
 
 @media (max-width: 1200px) {
-  .headermenu {
+  .container,
+  .container.fw {
+    padding: 0 0;
   }
   .headermenu a.menucontrol {
     display: block;

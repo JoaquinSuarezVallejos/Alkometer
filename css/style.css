@@ -22,9 +22,7 @@ main.screen {
   padding: var(--main-padding);
 }
 
-
 /** Header **/
-
 header {
   width: 100%;
   color: #fff;
@@ -204,36 +202,20 @@ header {
   }
 
 }
-
 /** End Header **/
 
 #home {
   height: calc(100vh - var(--main-padding) * 2);
 }
-
 .banner {
-  background: linear-gradient(rgba(50, 20, 0, 0.65) 20%, transparent 50%), url(../images/bg1.jpg) no-repeat center !important;
+  background: linear-gradient(rgba(50, 20, 0, 0.65) 20%, transparent 50%), url(../images/bg2.jpeg) no-repeat center !important;
   background-size: cover !important;
   border-radius: 20px;
-}
-.page_divider{
-  /* width: 40%;
-  height: 40%;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 40px; */
 }
 .text-overlay {
   background: rgba(0, 0, 0, 0.6); /* Black background with 60% opacity */
   border-radius: 20px;
   padding: 10px;
-}
-.center_div {
-  margin: 0 auto;
-}
-.move-up {
-  transform: translateY(-100px); /* Move the div up by 20px */
 }
 .underline-text {
   text-decoration: underline;
@@ -259,22 +241,4 @@ header {
 .copyright a {
   color: #000;
   border-bottom: 1px solid #000;
-}
-.social a {
-  float: left;
-  color: #000;
-  font-size: 21px;
-  margin-right: 13px;
-}
-.social a:last-of-type {
-  margin-right: 0;
-}
-.footerlinks a {
-  float: left;
-  font-size: 21px;
-  color: #000;
-  margin-right: 20px;
-}
-.footerlinks a:last-of-type {
-  margin-right: 0;
 }
