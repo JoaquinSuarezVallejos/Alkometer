@@ -1,4 +1,5 @@
 /* CONTAINER */
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -6,11 +7,6 @@
 }
 .container.fw {
   width: 100%;
-}
-
-.btnbox {
-}
-.btnbox {
 }
 .btn {
   float: left;
@@ -34,20 +30,10 @@
 .btnbox .btn {
   margin: 0 10px;
 }
-
 section {
   float: left;
   width: 100%;
   position: relative;
-}
-.contentblock {
-}
-.contentblock .text {
-}
-
-.contactform.style1 {
-}
-.contactform.style1 form {
 }
 .contactform.style1 form input[type="text"],
 .contactform.style1 form input[type="email"],
