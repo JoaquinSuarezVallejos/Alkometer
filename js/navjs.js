@@ -31,7 +31,6 @@ $(() => {
         const navMenuHeight = header.height() + gaptop;
         const windowScrollTop = $(this).scrollTop() + navMenuHeight;
         let currentSection = scrollTargets.map(function() {
-            console.log($(this).attr('id'), $(this).offset().top, windowScrollTop);
             if ($(this).offset().top <= windowScrollTop) return this;
         });
         const activeId = (
