@@ -72,13 +72,13 @@ const drinks = {
 };
 
 const alcoholGaugeValues = [
-  { limit: 0, color: 'green', icon: '🚶', title: 'Sobrio' },
-  { limit: 0.3, color: 'blue', icon: '🍺', title: 'Sin efectos aparentes' },
-  { limit: 0.5, color: 'yellow', icon: '🍻', title: 'Disminución de la coordinación' },
-  { limit: 0.8, color: 'orange', icon: '🍷', title: 'Euforia y desinhibición' },
-  { limit: 1.2, color: 'red', icon: '🥃', title: 'Mareos y pérdida de equilibrio' },
-  { limit: 2, color: 'purple', icon: '🍸', title: 'Riesgo de coma' },
-  { limit: 3.5, color: 'black', icon: '⚰️', title: 'Riesgo de muerte' },
+  { from: 0, color: 'green', icon: '🚶', title: 'Sobrio' },
+  { from: 0.1, color: 'blue', icon: '🍺', title: 'Sin efectos aparentes' },
+  { from: 0.3, color: 'yellow', icon: '🍻', title: 'Disminución de la coordinación' },
+  { from: 0.8, color: 'orange', icon: '🍷', title: 'Euforia y desinhibición' },
+  { from: 2, color: 'red', icon: '🥃', title: 'Mareos y pérdida de equilibrio' },
+  { from: 3, color: 'purple', icon: '🍸', title: 'Riesgo de coma' },
+  { from: 5, color: 'black', icon: '⚰️', title: 'Riesgo de muerte' },
 ];
 
 // HEADER FIXED
@@ -239,16 +239,15 @@ $(() => {
       const timeToSober = bloodAlcoholConcentration / ELIMINATION_RATE_PER_HOUR;
       const timeToSoberHumanized = dayjs.duration({ hours: timeToSober }).humanize();
 
-      // Find the gauge value inmmediatly below the current blood alcohol concentration
-      const gaugeValue = alcoholGaugeValues.find((value) => value.limit >= bloodAlcoholConcentration);
-      const gaugeMax = alcoholGaugeValues[alcoholGaugeValues.length - 1].limit;
+      const gaugeValue = alcoholGaugeValues.find((value) => value.from >= bloodAlcoholConcentration) || alcoholGaugeValues[alcoholGaugeValues.length - 1];
+      const gaugeMax = alcoholGaugeValues[alcoholGaugeValues.length - 1].from;
       setGauge(bloodAlcoholConcentration / gaugeMax, gaugeValue.color, gaugeValue.icon);
       console.log({ bloodAlcoholConcentration, totalDrinkedAlcoholMass, timeToSoberHumanized });
 
       resultsTitle.text(gaugeValue.title);
       resultsText.text(timeToSober > 0
-        ? `Tu concentración de alcohol en sangre es de ${bloodAlcoholConcentration.toFixed(2)} g/L (${totalDrinkedAlcoholMass.toFixed(2)} g). Tardarás aproximadamente ${timeToSoberHumanized} en estar sobrio.`
-        : 'Tu concentración de alcohol en sangre es de 0 g/L. Ya estás sobrio.'
+        ? `Tu concentración de alcohol en sangre actual es de ${bloodAlcoholConcentration.toFixed(2)} g/L luego de consumir ${totalDrinkedAlcoholMass.toFixed(2)} g de alcohol. Tardarás aproximadamente ${timeToSoberHumanized} en estar sobrio.`
+        : `Tu concentración de alcohol en sangre es de 0 g/L luego de consumir ${totalDrinkedAlcoholMass.toFixed(2)} g de alcohol. Ya estás sobrio.`
       );
     }
   ];
