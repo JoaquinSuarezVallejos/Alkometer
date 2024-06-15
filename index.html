@@ -24,6 +24,10 @@
 
 		<!-- JS -->
 		<script src="js/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.11/dayjs.min.js" integrity="sha512-FwNWaxyfy2XlEINoSnZh1JQ5TRRtGow0D6XcmAWmYCRgvqOUTnzCxPc9uF35u5ZEpirk1uhlPVA19tflhvnW1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.11/locale/es.min.js" integrity="sha512-zXA0Z+C+U5x6VWKPRCOQUC+5uPvpCEUM5Cs40sJXPO6Jr9Bd+j+h94eMMDcZOu5bSITZJLD83kW37oZbxGY6PA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.11/plugin/duration.min.js" integrity="sha512-t0b2NyBypSms8nA81pldWo0mXbfMotsdYgvs4awmbi/GU/25YBNLnXj+I9DAMV7WGZ8+z8wtRolX7zSF2LN8UQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.11/plugin/relativeTime.min.js" integrity="sha512-MVzDPmm7QZ8PhEiqJXKz/zw2HJuv61waxb8XXuZMMs9b+an3LoqOqhOEt5Nq3LY1e4Ipbbd/e+AWgERdHlVgaA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 		<!-- Font Awesome CDN Link (Incons)-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
@@ -121,6 +125,56 @@
 								¿Es 100% exacta? No, pero es bastante precisa. ¿Van a recopilar mis datos? No, tranquilo/a, no somos Facebook.
 							</p>
 						</div>
+						<div id="calculator">
+							<div id="calculator-pages">
+								<form id="personal-info">
+									<h3>Contanos un poco sobre vos</h3>
+									<p>Esta información será utilizada para obtener resultados más precisos.</p>
+									<div class="page-content">
+										<div class="multi-input">
+											<label for="weight">Peso (en kg): </label>
+											<input name="weight" id="weight" type="number" min="20" max="500" step="0.1" placeholder="Ej: 70" required>
+											<label for="gender">Género: </label>
+											<select name="gender" id="gender" required>
+												<option value="" disabled selected>Seleccionar...</option>
+												<option value="male">Hombre</option>
+												<option value="female">Mujer</option>
+											</select>
+										</div>
+									</div>
+									<button type="submit" class="button continue-btn">Continuar</button>
+								</form>
+								<form id="drinks-info">
+									<h3>¿Qué bebidas tomaste?</h3>
+									<p>El tipo de bebida es importante ya que cada una tiene una graduación de alcohol diferente.</p>
+									<div class="page-content">
+										<ul id="drinks-table">
+											<li id="drinks-table-header">
+												<span>Bebida</span>
+												<span>Mililitros consumidos</span>
+												<span>Graduación alcohólica</span>
+												<span>Tiempo desde la ingesta (en horas)</span>
+											</li>
+											<li id="drinks-table-add">
+												<button id="add-drink" class="button small green plus">Agregar bebida</button>
+											</li>
+										</ul>
+									</div>
+									<button type="submit" class="button continue-btn">Continuar</button>
+								</form>
+								<div id="results">
+									<div class="gauge" id="gauge">
+										<div class="gauge-mask">
+											<div class="gauge-bar"></div>
+										</div>
+									</div>
+									<h3>Title</h3>
+									<p>Results</p>
+									<button type="submit" class="button restart-btn" id="restart-btn">Volver a empezar</button>
+								</div>
+							</div>
+							<button id="back-btn"></button>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -153,5 +207,30 @@
 		<!-- JS -->
 		<script src="js/js-global-blocks.js"></script>
 		<script src="js/navjs.js"></script>
+
+		<!-- Templates -->
+		<template id="calculator-drink-row-template">
+			<li>
+				<label>
+					<span>Bebida:</span>
+					<select data-name="Bebida" name="drink" required>
+						<option value="" disabled selected>Seleccionar...</option>
+					</select>
+				</label>
+				<label>
+					<span>Mililitros consumidos:</span>
+					<input data-name="Mililitros consumidos" name="ml" type="number" min="1" step="1" placeholder="Ej: 500" required>
+				</label>
+				<label>
+					<span>Graduación alcohólica:</span>
+					<input data-name="Graduación alcohólica" name="graduation" type="number" min="0.1" step="any" placeholder="Ej: 5" required>
+				</label>
+				<label>
+					<span>Tiempo desde la ingesta (en horas):</span>
+					<input data-name="Tiempo desde la ingesta (en horas)" name="hours-passed" type="number" min="0.01" step="any" placeholder="Ej: 2" required>
+				</label>
+				<button class="delete-btn button small danger trash inline"></button>
+			</li>
+		</template>
 	</body>
 </html>
