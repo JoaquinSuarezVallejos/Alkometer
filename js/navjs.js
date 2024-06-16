@@ -12,18 +12,28 @@ $(() => {
         if (targetSection.length) return targetSection;
     });
 
+    const heroLink = $("#hero-link");
+    heroLink.on('click', function (event) {
+        event.preventDefault();
+        const targetId = $(this).attr("href");
+        const targetPosition = "#" === targetId
+            ? 0
+            : $(targetId).offset().top - 120;
+        $("html, body").stop().animate({ scrollTop: targetPosition }, scrollspeed);
+    });
+
     $("#header-menu-toggle").click(function () {
         navMenu.toggleClass("active");
     });    
 
-    navMenuItems.click(function (event) {
+    navMenuItems.on('click', function (event) {
         event.preventDefault();
 
         navMenu.removeClass("active");
         const targetId = $(this).attr("href");
         const targetPosition = "#" === targetId
             ? 0
-            : $(targetId).offset().top - 90;
+            : $(targetId).offset().top - 120;
         $("html, body").stop().animate({ scrollTop: targetPosition }, scrollspeed);
     });
 
