@@ -218,20 +218,29 @@ header {
   height: calc(100vh - var(--main-padding) * 2);
 }
 
+.slogan{
+  border-radius: 20px;
+}
+#hero-link{
+  border-radius: 8px;
+  font-size: 20px;
+}
+
 /** Calculator **/
 
 #calculator {
   width: 100%;
   display: inline;
-  background-image: linear-gradient(135deg, white, #f0f7fb);
-  border: solid 1px #f0f0f0;
+  /* background-image: linear-gradient(135deg, white, #f0f7fb); */
+  border: solid 3px #f2b264;
   border-radius: 20px;
-  box-shadow: 0 10px 20px #fafafa;
+  /* box-shadow: 0 10px 20px #fafafa; */
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
   font-size: 16px;
   position: relative;
   overflow: hidden;
 
-  --color-accent: rgb(30, 79, 255);
+  --color-accent: #f2b264;
 
   #back-btn {
     position: absolute;
@@ -458,10 +467,11 @@ header {
 
 .button {
   padding: 12px 24px;
-  border: solid 1px var(--color-accent);
+  border: solid 2px var(--color-accent);
+  border-radius: 2px;
   color: var(--color-accent);
   background-color: white;
-  font-weight: 800;
+  font-weight: 900;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -469,6 +479,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  font-size: 16px;
 
   &:hover {
     background-color: #fafafa;
@@ -598,22 +609,28 @@ header {
 .contact h2:after {
   background: #000 !important;
 }
+.contact{
+  border-radius: 5px;
+}
 .copyright a {
   color: #000;
   border-bottom: 1px solid #000;
 }
-
 #contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+.submit_button{
+  border-radius: 10px;
+  border: #000;
+}
 
 
 /* Footer */
 footer {
-  background-color: black;
+  background-color: #000;
   color: white;
   padding: 48px 4vw;
   font-size: 16px;
@@ -634,7 +651,8 @@ footer {
 
     a {
       color: white;
-      text-decoration: none;
+      text-decoration: underline;
+      text-underline-offset: 3px;
       font-weight: 800;
       white-space: nowrap;
     }
