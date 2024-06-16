@@ -72,7 +72,7 @@ const drinks = {
 };
 
 const alcoholGaugeValues = [
-  { from: 0, color: 'green', icon: '🚶', title: 'Sobrio' },
+  { from: 0, color: 'green', icon: '🚶', title: 'Sobrio/a' },
   { from: 0.1, color: 'blue', icon: '🍺', title: 'Sin efectos aparentes' },
   { from: 0.3, color: 'yellow', icon: '🍻', title: 'Disminución de la coordinación' },
   { from: 0.8, color: 'orange', icon: '🍷', title: 'Euforia y desinhibición' },
@@ -246,8 +246,8 @@ $(() => {
 
       resultsTitle.text(gaugeValue.title);
       resultsText.text(timeToSober > 0
-        ? `Tu alcoholemia actual es de ${bloodAlcoholConcentration.toFixed(2)} g/L luego de haber consumido ${totalDrinkedAlcoholMass.toFixed(2)} gramos de alcohol. Tardarás aproximadamente ${timeToSoberHumanized} en estar sobrio.`
-        : `Tu alcoholemia actual es de 0 g/L luego de haber consumido ${totalDrinkedAlcoholMass.toFixed(2)} gramos de alcohol. Ya estás sobrio.`
+        ? `Tu alcoholemia actual es de ${bloodAlcoholConcentration.toFixed(2)} g/L luego de haber consumido ${totalDrinkedAlcoholMass.toFixed(2)} gramos de alcohol. Tardarás aproximadamente ${timeToSoberHumanized} en estar sobrio/a.`
+        : `Tu alcoholemia actual es de 0 g/L luego de haber consumido ${totalDrinkedAlcoholMass.toFixed(2)} gramos de alcohol. Ya estás sobrio/a.`
       );
     }
   ];
