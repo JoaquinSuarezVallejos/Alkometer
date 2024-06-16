@@ -15,6 +15,7 @@
 
 html {
   --main-padding: min(50px, 3vw);
+  font-family: 'Manrope';
 }
 
 main.screen {
@@ -114,7 +115,8 @@ header {
         z-index: 999;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, .5);
+        background-color: rgba(0, 0, 0, .8);
+        backdrop-filter: blur(5px);
         margin: 0;
         display: none;
         justify-content: center;
@@ -553,4 +555,63 @@ header {
 .copyright a {
   color: #000;
   border-bottom: 1px solid #000;
+}
+
+
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+  padding: 48px 4vw;
+  font-size: 16px;
+  line-height: 24px;
+  justify-content: space-between;
+
+  display: flex;
+  gap: 20px;
+
+  div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    flex-grow: 1;
+    max-width: 70%;
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    div {
+      display: flex;
+      gap: 12px;
+    }
+  }
+
+  div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    gap: 40px;
+
+    span {
+      text-align: center;
+    }
+
+    div:first-child,
+    div:last-child {
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }

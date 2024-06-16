@@ -352,10 +352,12 @@ $(() => {
   /* Contact form */
   $('#contact-form').on('submit', (e) => {
     e.preventDefault();
-    let name = $('[name="name"]').val();
-    let message = $('[name="message"]').val();
-    let finalMessage = `¡Hola! Soy ${name}. ${message}`;
-    let url = `https://wa.me/5491126438752?text=${finalMessage}`;
+    const firstname = $('[name="firstname"]').val();
+    const lastname = $('[name="lastname"]').val();
+    const email = $('[name="email"]').val();
+    const message = $('[name="message"]').val();
+    const finalMessage = `¡Hola! Soy ${firstname} ${lastname} (${email}). ${message}`;
+    const url = `https://wa.me/5491126438752?text=${finalMessage}`;
     window.open(url, '_blank');
   });
 });

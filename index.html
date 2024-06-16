@@ -56,7 +56,7 @@
 		<main class="screen w_100 ml_auto mr_auto">
 
 			<!-- Banner -->
-			<section class="banner f_l_w_100 pt_200 pb_200 aspectratio_16_10 dflex flex_wrap jc_c ai_c pt_150_tablet pb_125_tablet" id="home">
+			<section class="banner pt_200 pb_200 aspectratio_16_10 dflex flex_wrap jc_c ai_c pt_150_tablet pb_125_tablet" id="home">
 				<div class="container pl_60 pr_60">
 					<div class="text">
 						<h1 class="w_auto text-overlay fs_45 f_900 text_white text_center ml_15 mr_15 fs_40_tablet fs_32_mobile">El único alcoholímetro que no juzga y no multa... tampoco quiere tu auto, sólo tu bienestar.</h1>
@@ -70,9 +70,9 @@
 			</div>
 
 			<!-- ¿Qué es la Alcoholemia? -->
-			<section class="title_line_color f_l_w_100" id="que_es_alcoholemia">
+			<section class="title_line_color" id="que_es_alcoholemia">
 				<div class="container">
-					<div class="contentblock f_l_w_100 dflex flex_wrap jc_sb ai_c pt_40">
+					<div class="contentblock dflex flex_wrap jc_sb ai_c pt_40">
 						<div class="text f_r w_100 pl_0 w_100_tablet pl_0_tablet">
 							<h2 class="text_center fs_42 fs_38_tablet fs_32_mobile smallborder after lrb pb_40 mb_30">¿QUÉ ES LA ALCOHOLEMIA?</h2>
 							<p class="fs_22 text_center mb_50 ml_40 mr_40 ml_20_tablet mr_20_tablet ml_5_mobile mr_5_mobile lh_200 fs_20_tablet">
@@ -112,9 +112,9 @@
 			</div>
 
 			<!-- Alcoholímetro (Calculadora de Alcoholemia) -->
-			<section class="title_line_color f_l_w_100 " id="alcoholimetro">
+			<section class="title_line_color " id="alcoholimetro">
 				<div class="container">
-					<div class="contentblock f_l_w_100 dflex flex_wrap jc_sb ai_c pt_45">
+					<div class="contentblock dflex flex_wrap jc_sb ai_c pt_45">
 						<div class="text f_r w_100 pl_0 w_100_tablet pl_0_tablet">
 							<h2 class="text_center fs_42 fs_38_tablet fs_32_mobile smallborder after lrb pb_40 mb_30">ALCOHOLÍMETRO</h2>
 							<p class="fs_22 text_center mb_50 ml_40 mr_40 ml_20_tablet mr_20_tablet ml_5_mobile mr_5_mobile lh_200 fs_20_tablet">
@@ -180,29 +180,40 @@
 			</section>
 			
 			<!-- Contacto -->
-			<section class="contact f_l_w_100 pt_60 pb_60 pl_60 pr_60 bg_gainsboro mt_100 mt_60_tablet pt_60_tablet pb_60_tablet pl_60_tablet pr_60_tablet pt_30_mobile pb_30_mobile pl_30_mobile pr_30_mobile" id="contact">
+			<section class="contact pt_60 pb_60 pl_60 pr_60 bg_gainsboro mt_100 mt_60_tablet pt_60_tablet pb_60_tablet pl_60_tablet pr_60_tablet pt_30_mobile pb_30_mobile pl_30_mobile pr_30_mobile" id="contact">
 				<div class="container">
 					<h2 class="text_center tt_u fs_42 fs_38_tablet fs_32_mobile smallborder after lrb pb_40 mb_40 mb_30_tablet pb_30_tablet">
 						Contacto por WhatsApp <i class="fab fa-whatsapp ml_6"></i> 
 					</h2>
 					<h3 class="text_center fs_20 fs_16_mobile mb_30 f_400">¡Estamos a disposición por cualquier consulta que tengas!</h3>
 					<div class="contactform style1 aligncenter w_50 w_75_tablet w_100_mobile">
-						<form method="post" action="/" class="f_l_w_100" id="contact-form">
-							<input type="text" name="name" placeholder="Nombre" required class="f_l">
-							<textarea name="message" placeholder="Tu mensaje..." required class="f_l_w_100 pt_15 pb_15 pr_15 pl_15 mb_35_fhd mb_25_tablet pt_10_mobile pb_10_mobile pr_15_mobile pl_15_mobile"></textarea>
+						<form method="post" action="/" id="contact-form">
+							<input type="text" name="firstname" placeholder="Nombre" required>
+							<input type="text" name="lastname" placeholder="Apellido" required>
+							<input type="email" name="email" placeholder="E-mail" required>
+							<textarea name="message" placeholder="Tu mensaje..." required class="pt_15 pb_15 pr_15 pl_15 mb_35_fhd mb_25_tablet pt_10_mobile pb_10_mobile pr_15_mobile pl_15_mobile"></textarea>
 							<button type="submit" class="aligncenter border bg_transparent pt_50">Enviar <span class="fa-solid fa-angle-right"></span></button>
 						</form>
 					</div>
 				</div>
 			</section>
-
-			<!-- Footer -->
-			<footer class="f_l_w_100 pt_40 pb_40">
-				<div class="container">
-					<div class="copyright text_center aligncenter fs_20 fs_18_mobile f_500">&copy; <span id="year"></span> <a class="border_none"> - Alkometer</a> <span class="f_300"> | Todos los derechos reservados </span></div>
-				</div>
-			</footer>
 		</main>
+
+		<footer>
+			<div>
+				<span>&copy;&nbsp;<span id="year"></span>&nbsp;Alkometer<span class="f_300">&nbsp;| Todos los derechos reservados</span></span>
+				<span class="credits">
+					Desarrollado por&nbsp;
+					<a target="_blank" href="https://bravoto.github.io/Ficha-personal-parcial1/">Tomás Bravo</a>,&nbsp;
+					<a target="_blank" href="https://tomardo04.github.io/dydw-ficha/">Tomás Bruno</a>,&nbsp;
+					<a target="_blank" href="https://joaquinsuarezvallejos.github.io/PrimerParcial-JoaquinSuarezVallejos-DesarrolloWeb/">Joaquín Suárez Vallejos</a>,&nbsp;y&nbsp;
+					<a target="_blank" href="https://brianvalente.github.io/uade-dydw-parcial-1/">Brian Valente</a>.
+				</span>
+			</div>
+			<div>
+				<img height="40" src="images/uade.webp">
+			</div>
+		</footer>
 
 		<!-- JS -->
 		<script src="js/js-global-blocks.js"></script>
