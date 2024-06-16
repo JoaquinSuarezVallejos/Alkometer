@@ -247,7 +247,7 @@ $(() => {
       resultsTitle.text(gaugeValue.title);
       resultsText.text(timeToSober > 0
         ? `Tu concentración de alcohol en sangre actual es de ${bloodAlcoholConcentration.toFixed(2)} g/L luego de consumir ${totalDrinkedAlcoholMass.toFixed(2)} g de alcohol. Tardarás aproximadamente ${timeToSoberHumanized} en estar sobrio.`
-        : `Tu concentración de alcohol en sangre es de 0 g/L luego de consumir ${totalDrinkedAlcoholMass.toFixed(2)} g de alcohol. Ya estás sobrio.`
+        : `Tu concentración de alcohol en sangre actual es de 0 g/L luego de consumir ${totalDrinkedAlcoholMass.toFixed(2)} g de alcohol. Ya estás sobrio.`
       );
     }
   ];
