@@ -215,7 +215,8 @@ header {
 /** End Header **/
 
 #home {
-  height: calc(100vh - var(--main-padding) * 2);
+  min-height: calc(100vh - var(--main-padding) * 2);
+  padding: 100px 0;
 }
 
 .slogan{
@@ -393,7 +394,7 @@ header {
 
             span {
               display: inline;
-              place-self: center;
+              place-self: self-start;
               text-align: center;
             }
           }
@@ -480,6 +481,7 @@ header {
   align-items: center;
   gap: 8px;
   font-size: 16px;
+  text-align: center;
 
   &:hover {
     background-color: #fafafa;
@@ -543,10 +545,6 @@ header {
     content: '\f105';
   }
 
-  &.hidden {
-    display: none;
-  }
-
   &.inline {
     display: inline-flex;
     place-self: center;
@@ -560,6 +558,10 @@ header {
     background-size: 200% 200%;
     backdrop-filter: blur(5px);
     animation: button-dark 7s ease infinite;
+  }
+
+  &.hidden {
+    display: none;
   }
 }
 
