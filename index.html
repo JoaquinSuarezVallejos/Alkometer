@@ -11,6 +11,13 @@
 		<title>Alkometer</title>
 		<link rel="icon" type="image/png" href="images/favicon.png">
 
+		<!-- SEO -->
+		<meta name="description" content="Alkometer es un alcoholímetro online que te permite calcular tu alcoholemia de forma rápida y sencilla. ¡No juzga, no multa, solo te cuida!">
+		<meta name="keywords" content="Alkometer, alcoholímetro, alcoholemia, calculadora de alcoholemia, fórmula de Widmark, conducir alcoholizado, seguridad vial">
+		<meta name="author" content="Tomás Bravo, Tomás Bruno, Joaquín Suárez Vallejos, Brian Valente">
+		<meta name="robots" content="index, follow">
+		<meta name="theme-color" content="#000000">
+
 		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +30,7 @@
 		<link rel="stylesheet" href="css/style-global.css">
 
 		<!-- JS -->
-		<script src="js/jquery.js"></script>
+		<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.11/dayjs.min.js" integrity="sha512-FwNWaxyfy2XlEINoSnZh1JQ5TRRtGow0D6XcmAWmYCRgvqOUTnzCxPc9uF35u5ZEpirk1uhlPVA19tflhvnW1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.11/locale/es.min.js" integrity="sha512-zXA0Z+C+U5x6VWKPRCOQUC+5uPvpCEUM5Cs40sJXPO6Jr9Bd+j+h94eMMDcZOu5bSITZJLD83kW37oZbxGY6PA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.11/plugin/duration.min.js" integrity="sha512-t0b2NyBypSms8nA81pldWo0mXbfMotsdYgvs4awmbi/GU/25YBNLnXj+I9DAMV7WGZ8+z8wtRolX7zSF2LN8UQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -41,7 +48,7 @@
 					<div id="isotype"></div>
 					<div id="logo"></div>
 				</a>
-				<a href="javascript:void(0)" id="header-menu-toggle"><i class="fa-solid"></i></a>
+				<button aria-label="Abrir menú" href="javascript:void(0)" id="header-menu-toggle"><i class="fa-solid"></i></button>
 				<nav id="headnav">
 					<ul>
 						<li class="active"><a href="#home">Inicio</a></li>
@@ -66,9 +73,7 @@
 			</section>
 			
 			<!-- Page Divider 1 -->
-			<div>
-				<img src="images/page_divider.png" alt="" class="w_40 w_55_tablet w_70_mobile dflex ml_auto mr_auto pt_40"/>
-			</div>
+			<div class="page_divider w_40 w_55_tablet w_70_mobile dflex ml_auto mr_auto pt_40"></div>
 
 			<!-- ¿Qué es la Alcoholemia? -->
 			<section class="title_line_color" id="que_es_alcoholemia">
@@ -88,7 +93,7 @@
 						</div>
 
 						<div class="controlAlcoholemia1 aligncenter mb_50">
-							<img src="images/controlAlcoholemia1.jpg" alt="" class="img_basic img_fit"/>
+							<img src="images/controlAlcoholemia1.webp" alt="" class="img_basic img_fit"/>
 						</div>
 
 						<p class="fs_22 text_center ml_40 mr_40 ml_20_tablet mr_20_tablet ml_5_mobile mr_5_mobile lh_200 fs_20_tablet">
@@ -101,16 +106,14 @@
 							cualquiera sea el caso. Las <b>sanciones</b> por conducir alcoholizado pueden variar desde <b>multas económicas</b> 
 							y la <b>suspensión de la licencia de conducir</b> hasta penas de cárcel en casos de reincidencia o accidentes graves. 
 							Para más información sobre el control de alcoholemia, 
-							click <a class="click_aqui" href="https://es.wikipedia.org/wiki/Control_de_alcoholemia" target="_blank">aquí</a>.
+							visita este <a class="click_aqui" href="https://es.wikipedia.org/wiki/Control_de_alcoholemia" target="_blank">artículo sobre control de alcoholemia</a> en Wikipedia.
 						</p>
 					</div>
 				</div>
 			</section>
 			
 			<!-- Page Divider 2 -->
-			<div>
-				<img src="images/page_divider.png" alt="" class="w_40 w_55_tablet w_70_mobile dflex ml_auto mr_auto pt_40"/>
-			</div>
+			<div class="page_divider w_40 w_55_tablet w_70_mobile dflex ml_auto mr_auto pt_40"></div>
 
 			<!-- Alcoholímetro (Calculadora de Alcoholemia) -->
 			<section class="title_line_color " id="alcoholimetro">
@@ -174,7 +177,7 @@
 									<button type="submit" class="button restart-btn" id="restart-btn">Volver a empezar</button>
 								</div>
 							</div>
-							<button id="back-btn"></button>
+							<button aria-label="Ir atrás" id="back-btn"></button>
 						</div>
 					</div>
 				</div>
@@ -212,7 +215,7 @@
 				</span>
 			</div>
 			<div>
-				<img height="40" src="images/uade.webp">
+				<img alt="Logo de UADE" loading="lazy" height="40" src="images/uade.webp">
 			</div>
 		</footer>
 

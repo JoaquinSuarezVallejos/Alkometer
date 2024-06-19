@@ -71,7 +71,7 @@ header {
       max-width: 250px;
 
       #isotype {
-        background-image: url(../images/favicon.png);
+        background-image: url(../images/favicon.webp);
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -81,7 +81,7 @@ header {
       }
 
       #logo {
-        mask-image: url(../images/noIcon_logo1.png);
+        mask-image: url(../images/noIcon_logo1.webp);
         mask-size: contain;
         mask-repeat: no-repeat;
         background-color: white;
@@ -95,7 +95,11 @@ header {
     #header-menu-toggle {
       display: none;
       color: white;
+      background-color: transparent;
+      border: none;
       font-size: 24px;
+      cursor: pointer;
+      padding: 0 8px;
 
       @media (max-width: 1150px) {
         display: block;
@@ -572,7 +576,7 @@ header {
 }
 
 .banner {
-  background: linear-gradient(rgba(50, 20, 0, 0.65) 20%, transparent 50%), url(../images/bg2.jpeg) no-repeat center !important;
+  background: linear-gradient(rgba(50, 20, 0, 0.65) 20%, transparent 50%), url(../images/bg2.webp) no-repeat center !important;
   background-size: cover !important;
   border-radius: 20px;
 }
@@ -583,6 +587,14 @@ header {
   justify-content: center;
   align-items: center;
   gap: 24px;
+}
+
+.page_divider {
+  background-image: url(../images/page_divider.webp);
+  background-position: center;
+  background-size: contain;
+  margin-top: 32px;
+  aspect-ratio: calc(1156/177);
 }
 
 .text-overlay {
